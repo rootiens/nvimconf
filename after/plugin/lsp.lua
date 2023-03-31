@@ -13,7 +13,20 @@ lsp.on_attach(function(client, bufnr)
     local bind = vim.keymap.set
 
     bind('n', '<leader>f', '<cmd>lua vim.lsp.buf.format()<cr>', opts)
+    vim.keymap.set("n", "<leader>ca", function() vim.lsp.buf.code_action() end, opts)
+
     -- more keybindings...
 end)
 
+lsp.set_sign_icons({
+    error = '✘',
+    warn = '▲',
+    hint = '⚑',
+    info = '»'
+})
+
 lsp.setup()
+
+vim.diagnostic.config({
+    virtual_text = true
+})
