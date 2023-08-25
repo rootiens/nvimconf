@@ -23,4 +23,6 @@ vim.opt.termguicolors = true
 
 vim.opt.updatetime = 50
 
+vim.opt.clipboard = "unnamedplus"
+
 -- vim.opt.colorcolumn = "80"
