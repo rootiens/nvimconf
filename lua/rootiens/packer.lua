@@ -52,4 +52,6 @@ return require('packer').startup(function(use)
             require('Comment').setup()
         end
     }
+    use {"sekke276/dark_flat.nvim"}
+    use 'AlexvZyl/nordic.nvim'
 end)
