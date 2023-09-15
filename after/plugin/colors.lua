@@ -1,6 +1,6 @@
 function ColorMyNVIM(color)
     -- color = color or "rose-pine"
-    color = color or "dark_flat"
+    color = color or "tokyonight-night"
     vim.cmd.colorscheme(color)
 end
 

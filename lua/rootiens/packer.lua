@@ -54,4 +54,12 @@ return require('packer').startup(function(use)
     }
     use {"sekke276/dark_flat.nvim"}
     use 'AlexvZyl/nordic.nvim'
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
+    use 'marko-cerovac/material.nvim'
+    use 'folke/tokyonight.nvim'
+    use 'ray-x/go.nvim'
+    use 'ray-x/guihua.lua'
 end)
